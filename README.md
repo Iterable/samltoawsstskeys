@@ -10,7 +10,7 @@ The Chrome Extension can be downloaded here:
 # Table of Contents
 * [Why this Chrome Extension?](#why)
 * [Getting Started](#gettingstarted)
-* [Create a symlink to your .aws directory (for Windows users)](#symlink)
+* [Create a symlink to your .aws directory (for macOS users)](#symlink)
 * [Frequently Asked Question](#faq)
 
 ## <a name="why"></a>Why this Chrome Extension?
