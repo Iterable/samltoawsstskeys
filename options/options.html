@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+	<script src="../lib/jquery-3.1.1.min.js"></script>
+	<link rel="stylesheet" href="./bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="options.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	
+    <title>Options page for 'SAML to AWS STS Keys Converter'</title>
+  </head>
+  <body>
+	<div class="container">
+		<div class="row">
+			<div id="divIcon" class="col-xs-3"><img src="../icons/icon_128.png" alt="Icon" height="64" width="64"></div>
+			<div id="divHeader" class="col-xs-9"><h2>Options page for 'SAML to AWS STS Keys Converter'</h2></div>
+		</div>
+		
+		<div id="divSettings" class="settings">
+			<div id="divFilename" class="setting-part col-xs-12">
+				<h3>Filename for writing the fetched AWS STS keys. File will be written to Chrome's download directory. Example filename: credentials</h3>
+				<br />
+				<input type="text" name="FileName" id="FileName" size="40">
+			</div>
+
+			<div id="divSessionDuration" class="setting-part col-xs-12">
+				<h3>[OPTIONAL]</h3><br>
+				<p>Apply the SessionDuration requested by the SAML provider</p>
+				<br />
+				<select name="SessionDuration" id="SessionDuration">
+					<option value="yes">yes</option>
+					<option value="no">no</option>
+				</select>
+				<br><br>
+				<p>Enable DEBUG logs</p>
+				<br />
+				<select name="DebugLogs" id="DebugLogs">
+					<option value="yes">yes</option>
+					<option value="no">no</option>
+				</select>
+			</div>
+			
+			<div id="divRoles" class="setting-part col-xs-12">
+				<h3>[OPTIONAL]</h3><br>
+				<p>Specify a list of Role ARN's. For each role the plugin will call the assume-role API. The fetched AWS STS keys will be added to the output file as separate profiles.</p>
+				<div id="role_arns" class="inline-div">
+				</div>
+			</div>
+			
+			<div id="divSave">
+				<div id="status" class="inline-div"></div>
+				<button id="save">Save</button>
+			</div>
+		</div>
+		<script src="options.js"></script>
+		<footer class="text-center">
+			<div id="divInfo">
+					<small><a href="http://www.iterable.com">www.iterable.com</a></small><br>
+				<small class="invisible">Developed by prolane.org (Gerard Laan)</small>
+				<small class="invisible">For help, please see README at the <a href="https://github.com/prolane/samltoawsstskeys/blob/master/README.md" target="_blank">project page on Github.com</a></small>
+			</div>
+		</footer>
+	</div>
+  </body>
+</html>
+
