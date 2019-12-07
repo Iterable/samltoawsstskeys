@@ -20,7 +20,10 @@ The Security Token Service (STS) from AWS provides an API action assumeRoleWithS
 ## <a name="gettingstarted"></a>Getting Started
 TODO
 
-## <a name="symlink"></a>Create a symlink to your .aws directory (for Windows users)
+## <a name="symlink"></a>Create a symlink to your .aws directory (for macOS users)
+
+ln -s "/Users/$YourUserDownloads/credentials" "/Users/$YourUser/.aws/"
+
 TODO
 
 ## <a name="faq"></a>FAQ: Frequently Asked Question
