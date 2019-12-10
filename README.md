@@ -25,7 +25,7 @@ TODO
 
 ## <a name="symlink"></a>Create a symlink to your .aws directory (for macOS users)
 
-ln -s "/Users/$YourUserDownloads/credentials" "/Users/$YourUser/.aws/"
+ln -s "/Users/$YourUser/Downloads/credentials" "/Users/$YourUser/.aws/"
 
 TODO
 
